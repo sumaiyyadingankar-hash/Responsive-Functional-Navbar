@@ -156,10 +156,11 @@
 
 
 /* -------------------- RESPONSIVE (MOBILE) -------------------- */
+
 @media (max-width: 768px) {
 
   .hero-section {
-    min-height: 70vh;
+    min-height: 75vh;
     padding: 0 20px;
     background-position: center;
   }
@@ -168,32 +169,34 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 40px;
   }
 
   .hero-section .hero-details {
-    padding: 50px 20px;
+    padding: 40px 20px;
     max-width: 100%;
   }
 
   .hero-section .hero-details .tagline {
-    font-size: var(--font-size-s);
+    font-size: 12px;
+    letter-spacing: 1px;
   }
 
   .hero-section .hero-details .hero-title {
-    font-size: var(--font-size-l);
-    line-height: 1.3;
+    font-size: 22px;  /* was too small */
+    line-height: 1.35;
   }
 
   .hero-section .hero-details .hero-description {
-    font-size: var(--font-size-s);
+    font-size: 14px;
     margin: 15px 0;
   }
 
- .hero-section .hero-details button {
-    font-size: 13px;
-    padding: 7px 16px;
+  .hero-section .hero-details button {
+    font-size: 14px;      /* slightly bigger */
+    padding: 9px 20px;    /* more balanced */
   }
+
   .home_social_icons {
     justify-content: center;
   }
@@ -203,34 +206,38 @@
   }
 }
 
-
-
 /* -------------------- RESPONSIVE (SMALL MOBILE) -------------------- */
 @media (max-width: 480px) {
 
-  .hero-section .hero-details {
-    padding: 40px 15px;
+   .hero-section {
+ background: #9b6a80;
   }
 
-    .hero-section .hero-details .tagline {
-    font-size:10px;
+  .hero-section .hero-details {
+    padding: 35px 15px;
+  }
+
+  .hero-section .hero-details .tagline {
+    font-size: 11px;  /* before too tiny */
   }
 
   .hero-section .hero-details .hero-title {
-    font-size: var(--font-size-m);
+    font-size: 20px;  /* bigger and readable */
+    line-height: 1.3;
   }
 
   .hero-section .hero-details .hero-description {
-    font-size: var(--font-size-xs);
+    font-size: 13px;
   }
 
   .hero-section .hero-details button {
-    font-size: 12px;
-    padding: 6px 14px;
-    width: auto; /* remove full width */
+    font-size: 14px;     /* increased */
+    padding: 10px 22px;  /* looks perfect on phone */
+    width: auto;
   }
 
   .home_social_icons a {
     font-size: 22px;
   }
 }
+
